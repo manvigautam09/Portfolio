@@ -1,48 +1,45 @@
-# Manvi Sharma — portfolio
+# Manvi Sharma — Portfolio
 
-Personal portfolio built with Next.js (static export), TypeScript and plain CSS.
-Lavender theme with light and dark modes, built to WCAG 2.2 AA.
+My personal site: who I am, where I've worked, and what I've built.
 
-## Editing content
+I'm a senior full-stack engineer in Bengaluru with 7+ years of shipping TypeScript products,
+from database schemas and APIs to the interfaces people use. I'm currently a Senior Consultant
+at Thoughtworks, building a GPU capacity marketplace for a global leader in AI computing.
 
-All text lives in [`src/data/profile.ts`](src/data/profile.ts): about, experience, projects
-(`featured: true` shows a project on the home page; the rest appear on `/archive`), tech stack
-and links. The résumé download is `public/Manvi_Sharma_Resume.pdf`.
+## What's inside
 
-Client names are anonymised on purpose ("a global leader in AI computing", "a Fortune 500
-agricultural machinery maker"). Keep them that way.
+- **Experience** — Thoughtworks, Glue Labs and GeekyAnts
+- **Projects** — featured work, plus an archive of everything I've built
+- **Tech stack** — what I use, grouped by where I use it
+- **Contact** — email, résumé and profiles
 
-## Run locally
+## Built with
 
-```bash
-npm install
-npm run dev          # http://localhost:3000
-npm run build        # static site in ./out
-npm run check:contrast
-```
+- [Next.js](https://nextjs.org) (static export) and TypeScript
+- Plain CSS with design tokens for the lavender light and dark themes
+- [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque) for headings and
+  [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) for body text
+- Hosted on [Vercel](https://vercel.com)
 
 ## Accessibility
 
-- Every colour pair is checked by `npm run check:contrast` (4.5:1 text, 3:1 UI). Change a
-  colour in `src/app/globals.css`, then run it.
-- Skip link, landmarks, one `h1` per page, labelled lists, visible focus rings.
-- Theme follows the system setting until the visitor chooses; the choice is remembered.
-- The pointer glow and smooth scrolling switch off for `prefers-reduced-motion`.
-- External links announce that they open in a new tab.
-- Windows High Contrast (forced colours) is supported.
+The site is built to WCAG 2.2 AA. Every colour pair in both themes is checked by a script in this
+repo (`npm run check:contrast`), and the pages pass automated axe audits. It supports keyboard
+navigation, screen readers, reduced motion and Windows High Contrast.
 
-## Deploy on Vercel
+## Running it locally
 
-1. Go to vercel.com → **Add New → Project** → import `manvigautam09/portfolio`.
-2. Keep the defaults (framework: Next.js) and click **Deploy**.
-3. Every push to `main` redeploys automatically.
+```bash
+npm install
+npm run dev
+```
 
-## Custom domain (GoDaddy)
+Content lives in [`src/data/profile.ts`](src/data/profile.ts).
 
-1. In Vercel: **Project → Settings → Domains → Add** your domain (e.g. `manvisharma.dev`).
-2. In GoDaddy DNS, add the records Vercel shows. Usually:
-   - `A` record, host `@`, value `76.76.21.21`
-   - `CNAME` record, host `www`, value `cname.vercel-dns.com`
-3. Wait for DNS (minutes to a few hours). Vercel issues HTTPS automatically.
-4. In Vercel, add the env var `NEXT_PUBLIC_SITE_URL=https://your-domain` and redeploy so
-   link previews use the right URL.
+## Find me
+
+[LinkedIn](https://www.linkedin.com/in/manvigautam09/) ·
+[GitHub](https://github.com/manvigautam09) ·
+[Medium](https://medium.com/@mnvsgautam09) ·
+[X](https://x.com/manvigautam09) ·
+[mnvsgautam9@gmail.com](mailto:mnvsgautam9@gmail.com)
