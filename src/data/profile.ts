@@ -81,7 +81,7 @@ export const experience: Job[] = [
     highlights: [
       "Building a GPU capacity marketplace for a global leader in AI computing: token-based access control for three roles, a multi-party contract workflow, and decision tools for buyers, providers and admins.",
       "Helped grow that product from an internal Thoughtworks initiative into a billable client engagement in 2026.",
-      "Before that, the only senior frontend developer on the India side of a B2B parts ordering platform for a Fortune 500 agricultural machinery maker, across four to five teams.",
+      "Earlier at Thoughtworks, I was the only senior frontend developer on the India side of a B2B parts ordering platform for a Fortune 500 agricultural machinery maker, across four to five teams.",
       "Picked up Java to contribute across the stack, and mentored junior developers in React through pairing. Several still reach out for technical and career advice.",
     ],
     tech: ["Next.js", "React", "TypeScript", "Python", "Java", "RBAC", "SigNoz", "Datadog"],

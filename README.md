@@ -36,6 +36,13 @@ npm run dev
 
 Content lives in [`src/data/profile.ts`](src/data/profile.ts).
 
+## Credits
+
+The layout is inspired by [Brittany Chiang's portfolio](https://brittanychiang.com)
+([source](https://github.com/bchiang7/v4)). This site is not a fork: the code, colour system,
+typography and illustrations are original, but the two-column structure with a sticky sidebar
+follows her design. Thank you, Brittany.
+
 ## Find me
 
 [LinkedIn](https://www.linkedin.com/in/manvigautam09/) ·

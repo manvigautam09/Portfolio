@@ -194,8 +194,10 @@ export default function Home() {
 
         <footer className="footer">
           <p>
-            Built with Next.js and deployed on Vercel. Set in Bricolage Grotesque and Atkinson
-            Hyperlegible. Every colour meets WCAG AA contrast in both themes.
+            Layout inspired by{" "}
+            <NewTab href="https://brittanychiang.com">Brittany Chiang&apos;s portfolio</NewTab>. Built with
+            Next.js and deployed on Vercel. Set in Bricolage Grotesque and Atkinson Hyperlegible. Every
+            colour meets WCAG AA contrast in both themes.
           </p>
         </footer>
       </main>
