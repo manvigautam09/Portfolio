@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Archive() {
   return (
     <main id="content" className="archive" tabIndex={-1}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div className="archive-top">
         <Link className="back" href="/#projects">
           Back to Manvi Sharma
         </Link>
@@ -21,34 +21,32 @@ export default function Archive() {
       <p>Client platforms, products I led, and things I built to learn.</p>
 
       <div className="table-wrap">
-        <table className="table">
+        <table className="table" role="table">
           <caption className="visually-hidden">All projects, with where each was made and its technologies</caption>
-          <thead>
-            <tr>
-              <th scope="col">Project</th>
-              <th scope="col">Made at</th>
-              <th scope="col" className="hide-sm">
-                Built with
-              </th>
-              <th scope="col">Link</th>
+          <thead role="rowgroup">
+            <tr role="row">
+              <th scope="col" role="columnheader">Project</th>
+              <th scope="col" role="columnheader">Made at</th>
+              <th scope="col" role="columnheader">Built with</th>
+              <th scope="col" role="columnheader">Link</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody role="rowgroup">
             {projects.map((p) => (
-              <tr key={p.title}>
-                <td className="title">
+              <tr key={p.title} role="row">
+                <td className="title" role="cell">
                   {p.title}
                   <span className="desc">{p.summary}</span>
                 </td>
-                <td>{p.madeAt}</td>
-                <td className="hide-sm">
+                <td role="cell" data-label="Made at">{p.madeAt}</td>
+                <td role="cell">
                   <ul className="chips" aria-label="Built with">
                     {p.tech.map((t) => (
                       <li key={t}>{t}</li>
                     ))}
                   </ul>
                 </td>
-                <td>
+                <td role="cell" className={p.link ? undefined : "empty"}>
                   {p.link ? (
                     <a href={p.link.href} target="_blank" rel="noopener noreferrer">
                       {p.link.label}
